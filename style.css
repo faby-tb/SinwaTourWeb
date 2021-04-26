@@ -60,12 +60,12 @@ body {
   left: 0;
   z-index: 100;
   background: var(--sinwa_oscuro);
-  box-shadow: 0px 5px 18px 1px rgba(0,0,0,0.31);
+  box-shadow: 0px 5px 18px 1px rgba(0,0,0,0.40);
 }
 
 .header.small {
   line-height: 50px;
-  box-shadow: 0px 5px 18px 1px rgba(0,0,0,0.31);
+  box-shadow: 0px 5px 18px 1px rgba(0,0,0,0.30);
 }
 
 .header.small > .container > #logo {
@@ -191,6 +191,7 @@ ul.nav li a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0px -15px 15px 1px rgba(0,0,0,0.40);
 }
 
 .hero_footer{
