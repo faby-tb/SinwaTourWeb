@@ -27,7 +27,7 @@ body {
 
 .container {
   position: relative;
-  width: 1170px;
+  width: 90%;
   margin: 0 auto;
   color: #0c0c0c;
   font-size: 14px;
@@ -150,19 +150,19 @@ ul.nav li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 35rem;
+  height: 50rem;
 }
 
 .section .sliderfilter {
-  background:#50772d69;
+  background:  #06373a6c;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 35em;
+  height: 50em;
 }
 
 .section .footer {
-  background: #31572C;
+  background: var(--sinwa_oscuro);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -276,9 +276,9 @@ h1.hero:after {
 }
 
 .col.two {
-  width: 40%;
-  margin: 0 2.5%;
-  padding: 0 2.5%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
 }
 
 .col.extrapad {
@@ -304,14 +304,33 @@ h1.hero:after {
 }
 
 .col .feature {
-  font-size: 19px;
+  font-size: 62px !important;
+  font-weight: bold;
 }
 
 .col h1.side,
 .col p.side,
 .col span.side:first-of-type {
-  margin-left: 50px;
+  margin-left: 20px;
   text-align: left;
+  font-size: 26px;
+  margin-right: 40px;
+}
+
+.sidebutton {
+  background: #06373A;
+  color: #FFFFFF;
+  font-size: 26px;
+  height: 92px;
+  width: 350px;
+  border: none;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.side.two {
+  font-size: 24px !important; 
 }
 
 .col .icon {
@@ -380,7 +399,7 @@ h1.hero:after {
 }
 
 .col span.feature {
-  font-size: 20px;
+  font-size: 72px;
 }
 /*
   Text
@@ -508,7 +527,7 @@ h1.hero:after {
   .container {
     width: 1170px;
   }
-}*/
+}**/
 
 @media all and (max-width:450px) {
   .col, .col.four, .col.three, .col.two {
