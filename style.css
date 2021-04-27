@@ -336,7 +336,9 @@ h1.hero:after {
 }
 
 .person {
-  font-size: 5rem;
+  color: var(--sinwa_oscuro);
+  font-size: 8rem;
+  margin-top: 3rem;
 }
 .center {
   display: flex;
@@ -359,10 +361,10 @@ h1.hero:after {
   height: auto;
   width: auto;
   max-width: 250px;
-  max-height: 200px;
+  max-height: 210px;
   align-self: center;
   justify-self: center;
-  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .col .icon {
@@ -432,6 +434,21 @@ h1.hero:after {
 
 .col span.feature {
   font-size: 72px;
+}
+
+.logof {
+  color: var(--sinwa_blanco);
+  font-size: 4rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.3s linear;
+  border-radius: 15px;
+}
+
+.logof:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.082);
 }
 /*
   Text
