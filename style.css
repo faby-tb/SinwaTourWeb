@@ -318,19 +318,51 @@ h1.hero:after {
 }
 
 .sidebutton {
-  background: #06373A;
+  background: var(--sinwa_oscuro);
   color: #FFFFFF;
   font-size: 26px;
   height: 92px;
   width: 350px;
   border: none;
-  border-radius: 25px;
+  border-radius: 15px;
   margin-left: 20px;
-  margin-top: 20px;
+  padding: 1rem 3.5rem;
+  transition: background 0.15s linear;
+}
+
+.sidebutton:hover {
+  background: #095155;
+  cursor: pointer;
+}
+
+.person {
+  font-size: 5rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 .side.two {
   font-size: 24px !important; 
+}
+
+.logosdiv{
+  display: grid;
+  grid-template-areas: 'logoc logoc logoc';
+  flex-wrap: wrap;
+}
+
+.logoc{
+  display: block;
+  object-fit: scale-down;
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  max-height: 200px;
+  align-self: center;
+  justify-self: center;
+  margin-top: 1rem;
 }
 
 .col .icon {
