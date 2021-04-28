@@ -424,6 +424,22 @@ h1.hero:after {
 .transparent {
   opacity: 50%;
 }
+
+.servicesbg {
+  background: var(--sinwa_blanco);
+  background-image: url(/img/services_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50em;
+}
+.servicesbgfilter {
+  background:  #ffffff94;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50em;
+}
 /*
   Column specifics
 */
