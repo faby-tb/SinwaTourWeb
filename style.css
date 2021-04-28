@@ -42,6 +42,51 @@ body {
 .section.bg {
   background: #ffffff;
 }
+
+/*
+  Texts
+*/
+
+.herotitle{
+  color: var(--sinwa_blanco);
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+h1{
+  color: var(--sinwa_blanco);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2{
+  color: var(--sinwa_blanco);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+p{
+  color: var(--sinwa_blanco);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.bold{
+  font-weight: 800 !important;
+}
+
+.oscuro{
+  color: var(--sinwa_negro);
+}
+
+.p_captions{
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
 /*
   Header
 */
@@ -80,6 +125,7 @@ body {
 }
 
 .logotext {
+  font-size: 2rem !important;
   margin: 0;
   color: #F1F1F1;
 }
@@ -140,6 +186,10 @@ ul.nav li a {
   color:#F1F1F1;
 }
 
+.lenguaje_item_active {
+  font-weight: 800;
+}
+
 /*
   Slider
 */
@@ -172,13 +222,6 @@ ul.nav li a {
   display: block;
 }
 
-.hero_landing {
-  align-content: flex-start;
-  color: white;
-  font-size: 72px;
-  font-weight: bold;
-  font-style: italic;
-}
 
 .hero {
   color: white;
@@ -195,21 +238,11 @@ ul.nav li a {
 }
 
 .hero_footer{
-  color: var(--sinwa_oscuro);
-  font-weight: bold;
   font-style: italic;
   text-align: center;
-  font-size: 24px;
   margin: 1% 0% 0% 0%;
 }
 
-.hero_caption{
-  color: var(--sinwa_oscuro);
-  font-weight: lighter;
-  text-align: center;
-  font-size: 16px;
-  margin: 0% 0% 0.5% 0%;
-}
 
 
 @-webkit-keyframes mover {
@@ -240,6 +273,7 @@ h1.hero:after {
   display: flex;
   float: right;
   margin-bottom: 20px;
+  margin-top: 20rem;
 }
 
 .call span {
@@ -304,18 +338,18 @@ h1.hero:after {
 }
 
 .col .feature {
-  font-size: 62px !important;
+  font-size: 3rem !important;
   font-weight: bold;
 }
 
-.col h1.side,
+/*.col h1.side,
 .col p.side,
 .col span.side:first-of-type {
   margin-left: 20px;
   text-align: left;
   font-size: 26px;
   margin-right: 40px;
-}
+}*/
 
 .sidebutton {
   background: var(--sinwa_oscuro);
@@ -345,9 +379,6 @@ h1.hero:after {
   justify-content: center;
 }
 
-.side.two {
-  font-size: 24px !important; 
-}
 
 .logosdiv{
   display: grid;
@@ -417,7 +448,9 @@ h1.hero:after {
 
 .info {
   color: var(--sinwa_blanco);
-  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.2rem;
   margin: 2rem 1.5rem 0;
 }
 
@@ -444,15 +477,11 @@ h1.hero:after {
   Column specifics
 */
 
-.col p,
+/*.col p,
 .col h1 {
   padding: 0 1%;
   text-align: center;
-}
-
-.group.margin {
-  margin-bottom: 20px;
-}
+}*/
 
 .col .imgholder {
   height: 300px;
@@ -461,34 +490,16 @@ h1.hero:after {
   transition: background 0.3s linear;
 }
 
-.col.bg {
-  background: #FFF;
-}
-
-.col.pointer {
-  cursor: pointer;
-}
-
 .col.bg:hover .imgholder {
   background: #555;
 }
 
+/* TODO:cambiar a h3 o algo
+**/
 .col span.feature {
   font-size: 72px;
 }
 
-
-/*
-  Text
-*/
-
-
-/*
-  ToDo: Ver esto que esta raro
-  .container > h1:not(.hero) {
-  margin-bottom: 30px;
-  text-align: center;
-} */
 
 /*Linea que separa los contenedores*/
 .container > h1:after {
@@ -502,36 +513,7 @@ h1.hero:after {
   margin-top: 15px;
 }
 
-/*h2{
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-}*/
 
-.left,
-.left > h1,
-.left > p {
-  text-align: left;
-}
-
-.reset {
-  text-align: left !important;
-}
-
-.reset:after {
-  display: none !important;
-}
-/* 
-  Slider with Content
-*/
-
-.white h1,
-.white h2,
-.white p,
-.white div,
-.white a {
-  color: #fff;
-}
 /*
   Responsive
 */
