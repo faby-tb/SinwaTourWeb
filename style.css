@@ -11,7 +11,7 @@
   --sinwa_blanco: #FFF;
 }
 *{
-  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -50,20 +50,20 @@ body {
 .herotitle{
   color: var(--sinwa_blanco);
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: bold;
   font-style: italic;
 }
 
 h1{
   color: var(--sinwa_blanco);
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 h2{
   color: var(--sinwa_blanco);
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 p{
@@ -73,7 +73,7 @@ p{
 }
 
 .bold{
-  font-weight: 800 !important;
+  font-weight: bold !important;
 }
 
 .oscuro{
@@ -315,14 +315,13 @@ h1.hero:after {
 }
 
 .col.two {
-  width: 50%;
+  width: 45%;
   margin: 0;
   padding: 0;
 }
 
 .col.extrapad {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 0 2.5%;
 }
 
 
@@ -480,6 +479,7 @@ h1.hero:after {
   width: 100%;
   background: #333;
   transition: background 0.3s linear;
+  background-size: cover;
 }
 
 .col.bg:hover .imgholder {
@@ -618,15 +618,6 @@ h1.hero:after {
   .section .sliderfilter {
     height: 75vh;
   }
-
-  .col.extrapad{
-    padding: 0 2.5%;
-  }
-
-  .col.two{
-    width: 45%;
-  }
-
 } /** end responsive*/
 
 @media all and (max-width:450px) {
