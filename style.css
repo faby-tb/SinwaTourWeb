@@ -399,6 +399,31 @@ h1.hero:after {
 .responsivegroup {
   display: none;
 }
+
+.logof {
+  color: var(--sinwa_blanco);
+  font-size: 4rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.3s linear;
+  border-radius: 15px;
+}
+
+.logof:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.082);
+}
+
+.info {
+  color: var(--sinwa_blanco);
+  font-size: 1.5rem;
+  margin: 2rem 1.5rem 0;
+}
+
+.transparent {
+  opacity: 50%;
+}
 /*
   Column specifics
 */
@@ -436,20 +461,7 @@ h1.hero:after {
   font-size: 72px;
 }
 
-.logof {
-  color: var(--sinwa_blanco);
-  font-size: 4rem;
-  margin: 0 1rem;
-  padding: 0.5rem;
-  background: rgba(255, 255, 255, 0);
-  transition: background 0.3s linear;
-  border-radius: 15px;
-}
 
-.logof:hover {
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.082);
-}
 /*
   Text
 */
