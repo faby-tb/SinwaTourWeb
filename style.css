@@ -86,6 +86,10 @@ p{
   font-size: 1.2rem;
   margin: 0;
 }
+.footer .container .center p, .footer .container p{
+  margin: 2rem 1.5rem 0;
+}
+
 
 /*
   Header
@@ -273,7 +277,7 @@ h1.hero:after {
   display: flex;
   float: right;
   margin-bottom: 20px;
-  margin-top: 20rem;
+  margin-top: 25vh;
 }
 
 .call span {
@@ -320,11 +324,6 @@ h1.hero:after {
   padding-bottom: 20px;
 }
 
-.col .service,
-.col .feature {
-  font-size: 21px;
-  font-weight: 300;
-}
 
 .col .service:after {
   content: "";
@@ -444,14 +443,6 @@ h1.hero:after {
 .logof:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.082);
-}
-
-.info {
-  color: var(--sinwa_blanco);
-  font-weight: lighter;
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 2rem 1.5rem 0;
 }
 
 .transparent {
