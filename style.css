@@ -461,7 +461,7 @@ h1.hero:after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50em;
+  height: 90vh;
 }
 .servicesbgfilter {
   display: block;
@@ -469,7 +469,7 @@ h1.hero:after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50em;
+  height: 90vh;
 }
 
 .services_container{
@@ -695,6 +695,13 @@ h1.hero:after {
     font-size: 2.5rem;
     margin: 0 0.5rem;
     padding: 0.5rem;
+  }
+
+  .servicesbg {
+    height: 50em;
+  }
+  .servicesbgfilter {
+    height: 50em;
   }
 
 } /** end responsive*/
