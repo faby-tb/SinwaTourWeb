@@ -200,7 +200,7 @@ ul.nav li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50rem;
+  height: 80vh;
 }
 
 .section .sliderfilter {
@@ -208,7 +208,7 @@ ul.nav li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50em;
+  height: 80vh;
 }
 
 .section .footer {
