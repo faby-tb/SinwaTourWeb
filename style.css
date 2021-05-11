@@ -1,8 +1,3 @@
-
-/*:hover {
-  background:rgba(0, 0, 0, 0.1);
-}**/
-
 :root {
   --sinwa_negro: #061A23;
   --sinwa_oscuro: #06373A;
@@ -225,14 +220,11 @@ ul.nav li a {
   display: block;
 }
 
-
 .hero {
   color: white;
   font-weight: normal;
   letter-spacing: 1px;
 }
-
-
 
 h1.hero:after {
   content: "";
@@ -364,15 +356,6 @@ h1.hero:after {
   margin-top: 15px;
 }
 
-/*.col h1.side,
-.col p.side,
-.col span.side:first-of-type {
-  margin-left: 20px;
-  text-align: left;
-  font-size: 26px;
-  margin-right: 40px;
-}*/
-
 .extrapad{
   background-color: var(--sinwa_blanco);
   border-radius: 15px;
@@ -484,22 +467,20 @@ h1.hero:after {
   opacity: 50%;
 }
 
-
 .servicesbg {
   background: var(--sinwa_blanco);
   background-image: url(/img/services_img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 90vh;
 }
+
 .servicesbgfilter {
   display: block;
   background:  #ffffff94;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 90vh;
 }
 
 .services_container{
@@ -545,15 +526,6 @@ h1.hero:after {
   background: #095155;
   cursor: pointer;
 }
-/*
-  Column specifics
-*/
-
-/*.col p,
-.col h1 {
-  padding: 0 1%;
-  text-align: center;
-}*/
 
 .col .imgholder {
   height: 300px;
@@ -569,13 +541,6 @@ h1.hero:after {
   background: #555;
 }
 
-/* TODO:cambiar a h3 o algo
-
-.col span.feature {
-  font-size: 0.5rem;
-}
-*/
-
 /*Linea que separa los contenedores*/
 .container > h1:after {
   content: "";
@@ -588,16 +553,16 @@ h1.hero:after {
   margin-top: 15px;
 }
 
-
-/*
-  Responsive
-*/
-
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
+
+/*
+  Responsive
+*/
+
 
 @media all and (max-width: 768px) {
   .container {
@@ -644,26 +609,10 @@ h1.hero:after {
     clear: both;
   }
 }
-
-/*@media all and (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-*@media all and (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}*/
-
-
+/** 
+*Responsive
+* Escritorio Medio 1600x900
+*/
 @media all and (max-width: 1600px) {
   .container {
     width: 1170px;
@@ -731,28 +680,149 @@ h1.hero:after {
     padding: 0.5rem;
   }
 
-  .servicesbg {
-    height: 50em;
-  }
-  .servicesbgfilter {
-    height: 50em;
-  }
-
 } /** end responsive*/
 
-@media all and (max-width:450px) {
-  .col, .col.four, .col.three, .col.two {
-    display: block;
-    width: 95%;
-    padding: 0;
-    margin: 0 auto;
-    float: none;
+
+/** 
+*Responsive
+* Tablet 768x1280
+*/
+@media all and (max-width: 768px) {
+  .container {
+    width: 1170px;
   }
-  .col.extrapad {
-    padding: 1%;
-    margin-bottom: 10px;
+
+  ul.nav li a {
+    transition: color 0.2s linear;
+    font-size: 14px;
   }
-  .group {
-    display: none;
+
+  .herotitle{
+    font-size: 3rem;
   }
-}
+  
+  h1{
+    font-size: 2.3rem;
+  }
+  
+  h2{
+    font-size: 1.3rem;
+  }
+  
+  p{
+    font-size: 1.1rem;
+  }
+  
+  .p_captions{
+    font-size: 0.9rem;
+  }
+
+  .section .slider {
+    height: 75vh;
+  }
+  
+  .section .sliderfilter {
+    height: 75vh;
+  }
+
+  .col.extrapad{
+    padding: 0 1.0%;
+    margin: 1%;
+  }
+
+  .col.two{
+    width: 46%;
+  }
+
+  .sidebutton{
+    font-size: 1.1rem;
+    height: 72px;
+    width: 200px;
+    padding: 1rem 2rem;
+  }
+
+  .logoc{
+    max-width: 150px;
+    max-height: 120px;
+    padding: 0.7rem;
+  }
+
+  .logof {
+    background-color: #06373A;
+    font-size: 2.5rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+  }
+} /** end responsive*/
+
+/** 
+*Responsive
+* Telefono 425x740
+*/
+@media all and (max-width: 425px) {
+  .container {
+    width: 1170px;
+  }
+
+  ul.nav li a {
+    transition: color 0.2s linear;
+    font-size: 14px;
+  }
+
+  .herotitle{
+    font-size: 3rem;
+  }
+  
+  h1{
+    font-size: 2.3rem;
+  }
+  
+  h2{
+    font-size: 1.3rem;
+  }
+  
+  p{
+    font-size: 1.1rem;
+  }
+  
+  .p_captions{
+    font-size: 0.9rem;
+  }
+
+  .section .slider {
+    height: 75vh;
+  }
+  
+  .section .sliderfilter {
+    height: 75vh;
+  }
+
+  .col.extrapad{
+    padding: 0 1.0%;
+    margin: 1%;
+  }
+
+  .col.two{
+    width: 46%;
+  }
+
+  .sidebutton{
+    font-size: 1.1rem;
+    height: 72px;
+    width: 200px;
+    padding: 1rem 2rem;
+  }
+
+  .logoc{
+    max-width: 150px;
+    max-height: 120px;
+    padding: 0.7rem;
+  }
+
+  .logof {
+    background-color: #06373A;
+    font-size: 2.5rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+  }
+} /** end responsive*/
