@@ -665,10 +665,22 @@ h1.hero:after {
     font-size: 0.6rem;
   }
 
+  .slidercontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .herotitle{
-    font-size: 2rem;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 3rem;
   }
   
+  .call{
+    margin-top: 20vh;
+  }
+
   h1{
     font-size: 1.5rem;
   }
@@ -793,9 +805,20 @@ h1.hero:after {
     font-size: 0.6rem;
   }
 
+  .slidercontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .herotitle{
-    padding-top: 3vh;
-    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 2rem;
+  }
+
+  .call{
+    margin-top: 20vh;
   }
   
   h1{
@@ -895,3 +918,40 @@ h1.hero:after {
     margin: 1rem 1.5rem 0;
   }
 } /** end responsive*/
+
+
+/** 
+*Responsive
+* Telefono 370x740
+*/
+@media all and (max-width: 370px) {
+  
+  .container {
+    width: 90%;
+  }
+
+  .slidercontent{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .herotitle{
+    text-align: center;
+    padding-top: 7vh;
+    font-size: 2rem;
+  }
+
+  .call{
+    margin-top: 12vh;
+  }
+
+  .button_container{
+    padding: 0.8rem 0rem;
+    margin: 0% 15% 4% 15%
+  }
+
+  a{
+    font-size: 0.7rem;
+  }
+
+} /** end responsibe telefono 370*/
