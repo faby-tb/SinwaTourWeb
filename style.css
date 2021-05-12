@@ -83,7 +83,6 @@ p{
   margin: 2rem 1.5rem 0;
 }
 
-
 /*
   Header
 */
@@ -122,7 +121,7 @@ p{
 }
 
 .logotext {
-  font-size: 2rem !important;
+  font-size: 2rem;
   margin: 0;
   color: #F1F1F1;
 }
@@ -326,6 +325,12 @@ h1.hero:after {
   margin: 0 1%;
 }
 
+.col.two {
+  width: 45%;  
+  margin: 0px 1%;
+  padding: 0;
+}
+
 .col.three {
   background-color: var(--sinwa_blanco);
   width: 29.1%;
@@ -335,17 +340,25 @@ h1.hero:after {
   box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
 }
 
-.col.two {
-  width: 45%;  
-  margin: 0px 1%;
-  padding: 0;
-}
-
 .col.extrapad {
   padding: 0 1.5%;
   box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
 }
 
+.col .imgholder {
+  height: 260px;
+  width: 100%;
+  border-radius: 15px;
+  transition: background 0.3s linear;
+  box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.05);
+}
+
+.col .imgholdercaption{
+  color: var(--sinwa_negro);
+}
+.col.bg:hover .imgholder {
+  background: #555;
+}
 
 .col .service:after {
   content: "";
@@ -534,21 +547,6 @@ h1.hero:after {
   cursor: pointer;
 }
 
-.col .imgholder {
-  height: 260px;
-  width: 100%;
-  border-radius: 15px;
-  transition: background 0.3s linear;
-  box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.05);
-}
-
-.col .imgholdercaption{
-  color: var(--sinwa_negro);
-}
-.col.bg:hover .imgholder {
-  background: #555;
-}
-
 /*Linea que separa los contenedores*/
 .container > h1:after {
   content: "";
@@ -567,63 +565,11 @@ h1.hero:after {
   clear: both;
 }
 
-/*
-  Responsive
-*/
-
-
-@media all and (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
-  .col.four {
-    width: 48%;
-    margin: 1%;
-  }
-  .col.three {
-    display: block;
-    width: 95%;
-    padding: 0;
-    margin: 0 auto;
-    float: none;
-  }
-  .header {
-    height: auto;
-    background: #4F772D;
-  }
-  #logo {
-    position: initial;
-    float: none;
-    display: block;
-    transform: none;
-    margin: 10px auto 0 auto;
-  }
-  ul.nav {
-    float: none;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-  ul.nav li{
-    /*float: initial;**/
-    display: inline-block;
-  }
-  .responsivegroup {
-    display: block;
-  }
-  .responsivegroup:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-
 /** 
 *Responsive
 * Escritorio Medio 1600x900
 */
-@media all and (max-width: 1700px) {
+@media all and (max-width: 1600px) {
   .container {
     width: 1170px;
   }
@@ -699,32 +645,42 @@ h1.hero:after {
 */
 @media all and (max-width: 768px) {
   .container {
-    width: 1170px;
+    width: 85%;
+    padding: 10px 0 5px 0px !important;
+  }
+
+  .logotext{
+    font-size: 1rem;
   }
 
   ul.nav li a {
     transition: color 0.2s linear;
-    font-size: 14px;
+    font-size: 10px;
+    padding: 15px;
+  }
+
+  .lenguaje_item{
+    font-size: 0.6rem;
   }
 
   .herotitle{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   
   h1{
-    font-size: 2.3rem;
+    font-size: 1.5rem;
   }
   
   h2{
-    font-size: 1.3rem;
-  }
-  
-  p{
     font-size: 1.1rem;
   }
   
+  p{
+    font-size: 1rem;
+  }
+  
   .p_captions{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .section .slider {
@@ -745,24 +701,60 @@ h1.hero:after {
   }
 
   .sidebutton{
-    font-size: 1.1rem;
+    font-size: 1rem;
     height: 72px;
     width: 200px;
     padding: 1rem 2rem;
   }
 
-  .logoc{
-    max-width: 150px;
-    max-height: 120px;
-    padding: 0.7rem;
+  .logosdiv{
+    margin: 5% 0%;
   }
 
+  .logoc{
+    max-width: 80px;
+    max-height: 80px;
+    padding: 0% !important;
+  }
+
+  /*Galery_index*/
+  .col .imgholder {
+    height: 140px;
+    width: 100%;
+  }
+
+  /*Services_index*/
+  .services_container{
+    height: 55vh;
+  }
+
+  .services_card{
+    height: 40vh;
+    padding: 0.5rem !important;
+    margin: 0rem 0.2rem !important;
+  }
+
+  .card_center{
+    height: 48vh;
+  }
+
+  .button_container{
+    padding: 0.8rem 0rem;
+    margin: 0% 29% 4% 27%
+  }
+
+  /*Footer_index*/
   .logof {
     background-color: #06373A;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 0.5rem;
     padding: 0.5rem;
   }
+
+  .footer .container .center p, .footer .container p{
+    margin: 1rem 1.5rem 0;
+  }
+
 } /** end responsive*/
 
 /** 
