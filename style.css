@@ -46,7 +46,7 @@ body {
 */
 
 .herotitle {
-  color: var(--sinwa_blanco);
+  color: var(--sinwa_blanco) !important;
   font-size: 4rem;
   font-weight: bold;
 }
@@ -617,11 +617,12 @@ h1.hero:after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  height: 80vh;
 }
 
 .section .about_herotitle{
   margin-bottom: 0%;
+  color: var(--sinwa_blanco) !important;
 }
 
 .section .about_herosubtitle{
