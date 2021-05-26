@@ -1180,7 +1180,6 @@ h1.hero:after {
 
 .header .container ul {
   margin: 0;
-  padding: 0;
   list-style: none;
   overflow: hidden;
   transition: .2s ease-out;
@@ -1282,7 +1281,7 @@ h1.hero:after {
   }
   .header.small{
     line-height: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
   .header .container ul li{
     line-height: 50px;
@@ -1290,11 +1289,9 @@ h1.hero:after {
   .header .container ul {
     transition: .2s ease-out;
     margin-top: 50px;
-    transform: translateX(-80%);
   }
   .header .container li a {
     display: block;
-    justify-self: end;
   }
   ul.nav li:hover a::after {
     display: none;
@@ -1318,6 +1315,7 @@ h1.hero:after {
   }
   ul.nav li{
     width: 100%;
+    text-align: end;
   }
   ul.nav li a{
     padding: 0 0% !important;
@@ -1325,6 +1323,7 @@ h1.hero:after {
   ul.nav{
     display: flex;
     flex-direction: column;
+    padding-right: 5%;
   }
   .header{
     line-height: 50px;
