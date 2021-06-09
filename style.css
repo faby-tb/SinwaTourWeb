@@ -201,7 +201,6 @@ ul.nav li a {
   display: none !important;
 }
 
-
 /* INDEX */
 
 /**
@@ -373,7 +372,7 @@ h1.hero:after {
 .imgholder {
   border-radius: 15px;
   transition: background 0.3s linear;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .nopad .imgholder {
@@ -614,44 +613,49 @@ h1.hero:after {
 * Filtro del slider abouts us
 */
 .section .about_sliderfilter {
-  background: rgb(31,95,91);
-  background: linear-gradient(90deg, rgba(31,95,91,0.8) 40%, rgba(31,95,91,0.40) 75%, rgba(31,95,91,0) 100%);
+  background: rgb(31, 95, 91);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 95, 91, 0.8) 40%,
+    rgba(31, 95, 91, 0.4) 75%,
+    rgba(31, 95, 91, 0) 100%
+  );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 80vh;
 }
 
-.section .about_herotitle{
+.section .about_herotitle {
   margin-bottom: 0%;
   color: var(--sinwa_blanco) !important;
 }
 
-.section .about_herosubtitle{
+.section .about_herosubtitle {
   margin-top: 0%;
 }
 
-.about_landing_footer{
+.about_landing_footer {
   background-color: var(--sinwa_blanco);
 }
-.col.two.history_left{
+.col.two.history_left {
   width: 65%;
   margin: 0px 1%;
   padding: 0;
 }
 
-.col.two.history_right{
+.col.two.history_right {
   width: 30%;
   margin: 0px 1%;
   padding: 0;
 }
 
-.imgholder.history_right{
+.imgholder.history_right {
   height: 212px;
   float: right;
 }
 
-.card{
+.card {
   background-color: var(--sinwa_blanco);
   margin: 0% 1%;
   border-radius: 30px;
@@ -659,69 +663,69 @@ h1.hero:after {
   box-shadow: var(--card_shadow);
 }
 
-.protocolsdiv{
+.protocolsdiv {
   display: grid;
   grid-template-areas: "protocol protocol protocol protocol protocol";
   flex-wrap: wrap;
 }
 
-.protocol.card{
+.protocol.card {
   border-radius: 20px;
   margin: 3% !important;
   padding: 5% !important;
   background-color: var(--sinwa_claro);
 }
 
-.protocol{
+.protocol {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.document{
+.document {
   padding-top: 3%;
   font-size: 5rem;
 }
 
-.about_location{
+.about_location {
   background-color: var(--sinwa_claro);
 }
 
 /*Location */
-.col.two.location_left{
+.col.two.location_left {
   width: 60%;
 }
 
-.col.two.location_right{
+.col.two.location_right {
   width: 30%;
 }
 
-.imgholder.location_right{
+.imgholder.location_right {
   background-size: cover;
   width: 400px !important;
   height: 200px !important;
 }
 
-.about_location.container{
+.about_location.container {
   width: 350px;
 }
 
-.about_location.sidebutton{
+.about_location.sidebutton {
   margin-top: 50px;
   margin-left: 0% !important;
   background-color: var(--sinwa_oscuro);
 }
 
-.about_location.sidebutton:hover{
+.about_location.sidebutton:hover {
   background-color: #095155;
 }
 
-.about_location.sidebutton:active{
+.about_location.sidebutton:active {
   background-color: var(--sinwa_acento);
 }
 
-.location_button_icon{
+.location_button_icon {
   font-size: 125%;
 }
 
@@ -733,7 +737,7 @@ h1.hero:after {
   height: 70vh;
 }
 
-.container.title{
+.container.title {
   display: flex;
   justify-content: center;
   padding: 20px 0 0px 0;
@@ -749,11 +753,13 @@ h1.hero:after {
   height: 60vh;
 }
 
-.family .text_card{
+.family .text_card {
   color: var(--sinwa_negro) !important;
 }
 
 /*  END ABOUT US*/
+
+/*  SERVICES */
 
 /** 
 *Responsive
@@ -1117,17 +1123,17 @@ h1.hero:after {
   * Responsive
   * Telefono 425x740
   */
-  .about_herosubtitle{
+  .about_herosubtitle {
     padding-top: 5%;
     text-align: center;
   }
-  .col.two.history_left{
+  .col.two.history_left {
     width: 95% !important;
   }
-  .col.two.col.two.history_right{
-    width:100% !important;
+  .col.two.col.two.history_right {
+    width: 100% !important;
   }
-  .imgholder.history_right{
+  .imgholder.history_right {
     height: 212px;
     float: left;
   }
