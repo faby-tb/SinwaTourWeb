@@ -93,6 +93,19 @@ p {
   margin: 2rem 1.5rem 0;
 }
 
+.m-0 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex h2,
+.flex p {
+  margin-right: 1rem;
+}
+
 /**
 * Header
 */
@@ -211,6 +224,7 @@ ul.nav li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  object-fit: fill;
   height: 80vh;
 }
 
@@ -547,6 +561,95 @@ h1.hero:after {
   margin: 1rem;
   height: 50vh;
 }
+.white_card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sinwa_blanco);
+  box-shadow: var(--card_shadow);
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin: 2rem 1rem !important;
+  height: 50vh;
+}
+.search .white_card {
+  height: 13vh !important;
+}
+.services_recent{
+  display: flex;
+  flex-direction: row;
+}
+.services_recent .white_card{
+  display: flex;
+  text-align: center;
+  width: 20rem !important;
+  height: fit-content !important;
+}
+.search_content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.search_input{ /**barra de busqueda*/
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  border: #c4c4c4;
+  height: 5vh;
+  padding: 2%;
+  margin-right: 1%;
+  width: 95%;
+}
+.search_icon{ /**icono de busqueda*/
+  background-color: var(--sinwa_claro);
+  color: var(--sinwa_blanco);
+  border-radius: 30%;
+  padding: 0.8%;
+  cursor: pointer;
+  margin-left: 1%;
+}
+.search_input:focus{
+  outline: none;
+  background-color: rgb(177, 177, 177);
+}
+.listview{
+  display: flex;
+  flex-direction: row;
+}
+.tags{
+  list-style: none;
+  padding-inline-start: 5% !important;
+  padding: 5% 0% 5% 0%;
+  cursor: pointer;
+}
+.tag_services_left{
+  width: fit-content !important;
+  height: fit-content;
+}
+.tag_services_left .white_card{
+  height: fit-content !important;
+  margin: 0% 0% 2% 0% !important;
+}
+.tag_services_left .white_card_info{
+  height: fit-content !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+}
+.white_card .tag_services_right{
+  background-color: var(--sinwa_blanco) !important;
+}
+.resumes .flex{
+  width: fit-content !important;
+  height: 4vh !important;
+  padding-left: 1%;
+}
+.tag_services_right{
+  background-color: var(--sinwa_claro);
+  border-radius: 30px;
+  box-shadow: var(--card_shadow);
+  width: 15vw !important;
+  height: fit-content;
+}
+/*___________________________**/
 .card_center {
   height: 58vh;
 }
@@ -558,7 +661,7 @@ h1.hero:after {
 
 .button_container {
   background: var(--sinwa_claro);
-  color: var(--sinwa_blanco);
+    color: var(--sinwa_blanco);
   font-weight: bold;
   border: none;
   border-radius: 15px;
@@ -601,18 +704,19 @@ h1.hero:after {
 /* END INDEX*/
 
 /* ABOUT US*/
-.section .about_slider {
+.section .second_slider {
   background-image: url(/img/services_img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  object-fit: none;
   height: 80vh;
 }
 
 /**
 * Filtro del slider abouts us
 */
-.section .about_sliderfilter {
+.section .second_sliderfilter {
   background: rgb(31, 95, 91);
   background: linear-gradient(
     90deg,
@@ -653,6 +757,11 @@ h1.hero:after {
 .imgholder.history_right {
   height: 212px;
   float: right;
+}
+.imgholder.services {
+  height: 240px;
+  width: 400px;
+  float: left;
 }
 
 .card {
@@ -760,6 +869,13 @@ h1.hero:after {
 /*  END ABOUT US*/
 
 /*  SERVICES */
+.services .second_slider {
+  height: 40vh;
+}
+.services .second_sliderfilter {
+  height: 40vh;
+}
+/*  END SERVICES*/
 
 /** 
 *Responsive
@@ -804,6 +920,13 @@ h1.hero:after {
     height: 75vh;
   }
 
+  .section .second_slider {
+    height: 75vh;
+  }
+  .section .second_sliderfilter {
+    height: 75vh;
+  }
+
   .col.extrapad {
     padding: 0 1%;
     margin: 1%;
@@ -837,10 +960,19 @@ h1.hero:after {
   * Responsive
   * Escritorio Medio 1600x900
   */
-  .section .about_sliderfilter {
-    height: 75vh;
-  }
+  
   /**end respinsive about us */
+
+  /** SERVICES
+  * Responsive
+  * Escritorio Medio 1600x900
+  */
+  .services .second_slider {
+    height: 30vh;
+  }
+  .services .second_sliderfilter {
+    height: 30vh;
+  }
 } /** end responsive Escritorio Medio 1600x900*/
 
 /** 
@@ -1173,3 +1305,163 @@ h1.hero:after {
     font-size: 0.7rem;
   }
 } /** end responsibe telefono 370*/
+
+/* Responsive NavBar */
+
+.header .container {
+  z-index: 3;
+}
+
+.header .container ul {
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}
+
+.header .container li a {
+  /* display: block; */
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .container .nav {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .container .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  user-select: none;
+  left: 90%;
+}
+
+.header .container .menu-icon .navicon {
+  background: var(--sinwa_blanco);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .container .menu-icon .navicon:before,
+.header .container .menu-icon .navicon:after {
+  background: var(--sinwa_blanco);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .container .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .container .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .container .menu-btn {
+  display: none;
+}
+
+.header .container .menu-btn:checked ~ .nav {
+  max-height: none;
+}
+
+.header .container .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .container .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .container .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+@media (min-width: 48em) {
+  .header .container .nav {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .container .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .header.small .container ul {
+    margin-top: 20px !important;
+    transition: 0.2s ease-out;
+  }
+  .header.small {
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+  .header .container ul li {
+    line-height: 50px;
+  }
+  .header .container ul {
+    transition: 0.2s ease-out;
+    margin-top: 50px;
+  }
+  .header .container li a {
+    display: block;
+  }
+  ul.nav li:hover a::after {
+    display: none;
+    color: var(--sinwa_acento);
+    content: "";
+    position: absolute;
+    font-size: 0rem;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+  }
+  li.active a::after {
+    display: none;
+    color: var(--sinwa_acento);
+    content: "";
+    position: absolute;
+    font-size: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+  }
+  ul.nav li {
+    width: 100%;
+    text-align: end;
+  }
+  ul.nav li a {
+    padding: 0 0% !important;
+  }
+  ul.nav {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+  }
+  .header {
+    line-height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
