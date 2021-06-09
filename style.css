@@ -93,6 +93,18 @@ p {
   margin: 2rem 1.5rem 0;
 }
 
+.m-0 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex h2,.flex p{
+  margin-right: 1rem;
+}
+
 /**
 * Header
 */
@@ -543,6 +555,16 @@ h1.hero:after {
   flex-direction: column;
   align-items: center;
   background-color: var(--sinwa_claro);
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  height: 50vh;
+}
+.white_card {
+  margin-top: 5rem !important;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sinwa_blanco);
   border-radius: 1.5rem;
   padding: 1rem 1.5rem;
   margin: 1rem;
