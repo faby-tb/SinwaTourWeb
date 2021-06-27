@@ -76,6 +76,9 @@ p {
 .claro {
   color: var(--sinwa_blanco) !important;
 }
+.sinwa_claro {
+  color: var(--sinwa_claro) !important;
+}
 .oscuro {
   color: var(--sinwa_negro) !important;
 }
@@ -767,9 +770,16 @@ h1.hero:after {
 .card {
   background-color: var(--sinwa_blanco);
   margin: 0% 1%;
-  border-radius: 30px;
-  padding: 1% 5%;
+  border-radius: 20px;
+  padding: 1% 2%;
   box-shadow: var(--card_shadow);
+}
+
+.columns_container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: fit-content;
 }
 
 .protocolsdiv {
