@@ -577,23 +577,25 @@ h1.hero:after {
 .search .white_card {
   height: 13vh !important;
 }
-.services_recent{
+.services_recent {
   display: flex;
   flex-direction: row;
+  overflow: auto;
+  white-space: nowrap;
 }
-.services_recent .white_card{
-  display: flex;
+.services_recent .white_card {
   text-align: center;
-  width: 20rem !important;
+  width: fit-content !important;
   height: fit-content !important;
 }
-.search_content{
+.search_content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.search_input{ /**barra de busqueda*/
+.search_input {
+  /**barra de busqueda*/
   background-color: #c4c4c4;
   border-radius: 10px;
   border: #c4c4c4;
@@ -602,7 +604,8 @@ h1.hero:after {
   margin-right: 1%;
   width: 95%;
 }
-.search_icon{ /**icono de busqueda*/
+.search_icon {
+  /**icono de busqueda*/
   background-color: var(--sinwa_claro);
   color: var(--sinwa_blanco);
   border-radius: 30%;
@@ -610,42 +613,42 @@ h1.hero:after {
   cursor: pointer;
   margin-left: 1%;
 }
-.search_input:focus{
+.search_input:focus {
   outline: none;
   background-color: rgb(177, 177, 177);
 }
-.listview{
+.listview {
   display: flex;
   flex-direction: row;
 }
-.tags{
+.tags {
   list-style: none;
   padding-inline-start: 5% !important;
   padding: 5% 0% 5% 0%;
   cursor: pointer;
 }
-.tag_services_left{
+.tag_services_left {
   width: fit-content !important;
   height: fit-content;
 }
-.tag_services_left .white_card{
+.tag_services_left .white_card {
   height: fit-content !important;
   margin: 0% 0% 2% 0% !important;
 }
-.tag_services_left .white_card_info{
+.tag_services_left .white_card_info {
   height: fit-content !important;
   flex-direction: row !important;
   align-items: flex-start !important;
 }
-.white_card .tag_services_right{
+.white_card .tag_services_right {
   background-color: var(--sinwa_blanco) !important;
 }
-.resumes .flex{
+.resumes .flex {
   width: fit-content !important;
   height: 4vh !important;
   padding-left: 1%;
 }
-.tag_services_right{
+.tag_services_right {
   background-color: var(--sinwa_claro);
   border-radius: 30px;
   box-shadow: var(--card_shadow);
@@ -664,7 +667,7 @@ h1.hero:after {
 
 .button_container {
   background: var(--sinwa_claro);
-    color: var(--sinwa_blanco);
+  color: var(--sinwa_blanco);
   font-weight: bold;
   border: none;
   border-radius: 15px;
@@ -775,7 +778,7 @@ h1.hero:after {
   box-shadow: var(--card_shadow);
 }
 
-.columns_container{
+.columns_container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -822,7 +825,7 @@ h1.hero:after {
 
 .imgholder.location_right {
   background-size: cover;
-  width: 400px !important;
+  width: 420px !important;
   height: 200px !important;
 }
 
@@ -887,11 +890,11 @@ h1.hero:after {
 }
 /*  END SERVICES*/
 
-iframe{
+iframe {
   border-width: 0px !important;
 }
 
-.contact_location{
+.contact_location {
   width: 540px;
   height: 365px;
 }
@@ -981,7 +984,11 @@ iframe{
     height: 30vh;
   }
 
-  .contact_location{
+  .imgholder.services {
+    height: 250px;
+    width: 400px;
+  }
+  .contact_location {
     width: 540px;
     height: 365px;
   }
@@ -1116,7 +1123,7 @@ iframe{
     margin: 2rem 1.5rem 0;
   }
 
-  .contact_location{
+  .contact_location {
     width: 300px;
     height: 340px;
   }
@@ -1212,8 +1219,8 @@ iframe{
     font-size: 0.6rem;
   }
   .sidebutton {
-    font-size: 0.8rem;
-    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    padding: 0.7rem 1.7rem;
   }
 
   .logosdiv {
@@ -1283,10 +1290,55 @@ iframe{
     height: 212px;
     float: left;
   }
-  .contact_location{
+  .contact_location {
     width: 375px;
   }
+
+  .protocolsdiv {
+    grid-template-areas: "protocol protocol" !important;
+  }
+
+  /*Location */
+  .col.two.location_left {
+    width: 90%;
+  }
+
+  .col.two.location_right {
+    width: 100%;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .imgholder.location_right {
+    width: 350px !important;
+  }
+
+  .about_location.container {
+    width: 370px;
+    height: 40px !important;
+  }
+
+  .family_container{
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .family {
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem 0.5rem;
+    height: 30vh;
+  }
   
+  /* services*/
+  .tag_services_right{
+    display: none !important;
+  }
+  .tag_services_left{
+    width: 100% !important;
+  }
+  .imgholder.services {
+    height: 150px;
+    width: 300px;
+  }
 } /** end responsive*/
 
 /** 
@@ -1294,7 +1346,7 @@ iframe{
 * Telefono 425x740
 */
 @media all and (max-width: 376px) {
-  .contact_location{
+  .contact_location {
     width: 333px;
   }
 }
@@ -1332,10 +1384,9 @@ iframe{
     font-size: 0.7rem;
   }
 
-  .contact_location{
+  .contact_location {
     width: 285px;
   }
-
 } /** end responsibe telefono 370*/
 
 /* Responsive NavBar */
