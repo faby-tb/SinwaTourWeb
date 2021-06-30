@@ -887,6 +887,14 @@ h1.hero:after {
 }
 /*  END SERVICES*/
 
+iframe{
+  border-width: 0px !important;
+}
+
+.contact_location{
+  width: 540px;
+  height: 365px;
+}
 /** 
 *Responsive
 * Escritorio Medio 1600x900
@@ -966,22 +974,16 @@ h1.hero:after {
     padding: 0.5rem;
   }
 
-  /** ABOUT US 
-  * Responsive
-  * Escritorio Medio 1600x900
-  */
-  
-  /**end respinsive about us */
-
-  /** SERVICES
-  * Responsive
-  * Escritorio Medio 1600x900
-  */
   .services .second_slider {
     height: 30vh;
   }
   .services .second_sliderfilter {
     height: 30vh;
+  }
+
+  .contact_location{
+    width: 540px;
+    height: 365px;
   }
 } /** end responsive Escritorio Medio 1600x900*/
 
@@ -1111,7 +1113,12 @@ h1.hero:after {
 
   .footer .container .center p,
   .footer .container p {
-    margin: 1rem 1.5rem 0;
+    margin: 2rem 1.5rem 0;
+  }
+
+  .contact_location{
+    width: 300px;
+    height: 340px;
   }
 } /** end responsive  Tablet 768x1280*/
 
@@ -1261,10 +1268,7 @@ h1.hero:after {
     margin: 1rem 1.5rem 0;
   }
 
-  /** ABOUT US 
-  * Responsive
-  * Telefono 425x740
-  */
+  /** ABOUT US */
   .about_herosubtitle {
     padding-top: 5%;
     text-align: center;
@@ -1279,8 +1283,21 @@ h1.hero:after {
     height: 212px;
     float: left;
   }
-  /**end respinsive about us */
+  .contact_location{
+    width: 375px;
+  }
+  
 } /** end responsive*/
+
+/** 
+*Responsive
+* Telefono 425x740
+*/
+@media all and (max-width: 376px) {
+  .contact_location{
+    width: 333px;
+  }
+}
 
 /** 
 *Responsive
@@ -1314,6 +1331,11 @@ h1.hero:after {
   a {
     font-size: 0.7rem;
   }
+
+  .contact_location{
+    width: 285px;
+  }
+
 } /** end responsibe telefono 370*/
 
 /* Responsive NavBar */
